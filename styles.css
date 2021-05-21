@@ -93,6 +93,9 @@ main {
         background-repeat: no-repeat;
         border-radius: 0 15px 15px 0;
     }
+    .head p {
+        font-size: 15px;
+    }
     .bottom-container {
         grid-column: 1;
         grid-row: 1;
@@ -101,7 +104,7 @@ main {
     }
     .stats {
         display: flex;
-        padding-top: 3rem;
+        padding-top: 2.5rem;
         justify-content: space-between;
     }
 }
