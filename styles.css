@@ -3,7 +3,7 @@
 :root {
     --very-dark-blue: hsl(233, 47%, 7%);
     --dark-desaturated-blue: hsl(244, 38%, 16%);
-    --soft-violet: rgba(170, 92, 219, .6);
+    --soft-violet: hsl(277, 64%, 61%);
     --white: hsl(0, 0%, 100%);
     --slightly-transparent-white-main: hsla(0, 0%, 100%, 0.75);
     --slightly-transparent-white-stat: hsla(0, 0%, 100%, 0.6);
@@ -31,9 +31,9 @@ main {
 }
 .top-container {
     height: 200px;
-    background: linear-gradient(var(--soft-violet), var(--soft-violet)), url(images/image-header-mobile.jpg);
+    background: url(images/image-header-mobile.jpg) no-repeat var(--soft-violet);
+    background-blend-mode: multiply;
     background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;
 }
 .bottom-container {
@@ -88,9 +88,9 @@ main {
     .top-container {
         grid-column: 2;
         height: 100%;
-        background: linear-gradient(var(--soft-violet), var(--soft-violet)), url(images/image-header-desktop.jpg);
+        background: url(images/image-header-desktop.jpg) no-repeat var(--soft-violet);
+        background-blend-mode: multiply;
         background-size: cover;
-        background-repeat: no-repeat;
         border-radius: 0 15px 15px 0;
     }
     .head p {
